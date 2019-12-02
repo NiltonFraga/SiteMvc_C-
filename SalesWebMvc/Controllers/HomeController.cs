@@ -17,14 +17,16 @@ namespace SalesWebMvc.Controllers
         {
             _logger = logger;
         }
-
+            
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
+            ViewData["Mensage"] = "Sales Web MVC App from C# Course";
+            ViewData["Professor"] = "Nilton Fraga";
             return View();
         }
 
